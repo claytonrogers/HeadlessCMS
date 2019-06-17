@@ -33,14 +33,22 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    '~/plugins/components'
+  ],
+  router: {
+    middleware: 'languageDetection'
+  },
   /*
    ** Nuxt.js modules
    */
   modules: [
+    [
+      'storyblok-nuxt',
+      { accessToken: '5uDu3oRIURx5QkzVCxfqbQtt', cacheProvider: 'memory' }
+    ],
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/bulma'
   ],
   /*
    ** Build configuration
