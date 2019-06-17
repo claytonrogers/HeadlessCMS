@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "test": "jest",
     "dev": "nuxt",
@@ -24,7 +25,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.1.0",
-    "css-loader": "^3.0.0",
+    "css-loader": "2.1.1",
     "eslint": "^5.15.1",
     "eslint-config-prettier": "^4.1.0",
     "eslint-config-standard": ">=12.0.0",
